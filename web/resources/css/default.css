@@ -1,9 +1,16 @@
+
 body {
     background-color: #ffffff;
     font-size: 12px;
     font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
     color: #000000;  
     margin: 10px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -17,13 +24,71 @@ h1 {
 }
 
 a:link, a:visited {
-  color: #045491;
-  font-weight : bold;
-  text-decoration: none;
+    color: #045491;
+    font-weight : bold;
+    text-decoration: none;
 }
 
 a:link:hover, a:visited:hover  {
-  color: #045491;
-  font-weight : bold;
-  text-decoration : underline;
+    color: #045491;
+    font-weight : bold;
+    text-decoration : underline;
+}
+#top {
+    background-color: #561f1a;
+    height: 150px;
+    position: relative;
+    border-radius: 10px;
+}
+.Nome{
+    margin-top: 45px;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    border-left: 10px
+
+}
+#menu{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.ui-menubar{ 
+    margin-top: 30px;
+    margin-left: 270px;
+    background-color: #561f1a;
+    border: 0;
+    font-size: 40px;
+    background: #808080;
+}
+.ui-menu .ui-menu-child{
+    background: #561f1a;
+}
+#bottom {
+    position: relative;
+    background-color: #561f1a;
+    height: 80px;
+    width: 100%;
+}
+#RedesSociais{
+    padding-right: 10px;
+    height: 80px;
+    width: 250px;
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesSociais{
+    height: 60px;
+    width: 60px;    
+}
+
+#content {
+    position: relative;
+    padding: 0px;
+    background-color: transparent;
 }
