@@ -1,7 +1,7 @@
 
 #top {
     position: relative;
-    background-color: #036fab;
+    background-color: #c2dfef;
     color: white;
     padding: 0px;
     margin: 0px 0px 10px 0px;
@@ -9,6 +9,7 @@
 
 #bottom {
     position: relative;
+    border-top: 2px solid antiquewhite;
     background-color: #c2dfef;
     padding: 5px;
     margin: 10px 0px 0px 0px;
