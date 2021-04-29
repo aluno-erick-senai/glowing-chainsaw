@@ -35,16 +35,21 @@ a:link:hover, a:visited:hover  {
     text-decoration : underline;
 }
 #top {
-    background-color: #561f1a;
     height: 150px;
     position: relative;
     border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;    
+    
 }
 .Nome{
     margin-top: 45px;
     font-size: 50px;
     font-family: 'Open Sans', sans-serif;
-    border-left: 10px
+    border-left: 10px;
+    color: blue;
 
 }
 #menu{
@@ -53,6 +58,7 @@ a:link:hover, a:visited:hover  {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    background-color: #DCDCDC;
 }
 .ui-menubar{ 
     margin-top: 30px;
