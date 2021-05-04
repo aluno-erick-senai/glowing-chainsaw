@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./base.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="content">
+        <h:form id="loginUsuario">
+            <div id="corpo">
+            <div id="login">login do cliente </div>
+            <img src="imagens/usuario.png" alt="usuario" id="usuario"/>
+            <br/>
+            Nome
+            <br/>
+            <p:inputText class="caixasLoginUsuario"/>
+           <br/>
+            Senha
+            <br/>
+            <p:inputText class="caixasLoginUsuario"/>
+            <br/>
+            <p:commandButton  value="Logar" class="botaoLogar"/> 
+            </div>
+        </h:form>        
+    </ui:define>
+</ui:composition>

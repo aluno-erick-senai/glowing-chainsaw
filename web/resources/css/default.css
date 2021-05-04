@@ -104,3 +104,36 @@ a:link:hover, a:visited:hover  {
     width:110%;
     top: -9px;
 }
+.caixasLoginUsuario{
+    background-color: #045491;
+    height: 50px;
+    width: 30%;
+}
+#usuario{
+    height: 200px;  
+    
+}
+#login{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+#loginUsuario{
+    text-align: center;
+    font-size: 20px;
+    margin-left: -10px;
+}
+.botaoLogar{
+    background-color: yellow;
+    border-radius: 10px;
+    height:80px;
+    width: 120px;
+    margin-top: 10px;
+}
+#corpo{
+    height: 65%;
+    width: 60%;
+    background-color: #c2dfef;
+    margin-left:18%;
+    border-radius: 40px;
+}
