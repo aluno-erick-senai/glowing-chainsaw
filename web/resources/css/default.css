@@ -137,3 +137,22 @@ a:link:hover, a:visited:hover  {
     margin-left:18%;
     border-radius: 40px;
 }
+#quadradofundo{
+    height: 65%;
+    width: 60%;
+    background-color: #c2dfef;
+    margin-left:18%;
+    border-radius: 40px;
+}
+#painel{
+    height: 65%;
+    width: 60%;
+    margin-left:18%;
+    font-size: 25px;
+    line-height:50px;
+   
+}
+#titulopainel{
+    font-size: 30px;
+    color:black;
+}
