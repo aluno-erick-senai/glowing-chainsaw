@@ -15,11 +15,16 @@
     <h:body>
         <body background="/imagens/background.jpeg" bgproperties="fixed"></body>
         <div id="top">
-           
+
+            <img src="imagens/WhatsApp_Image_2021-04-29_at_16.52.57-removebg-preview__4_-removebg-preview.png" alt="logo" id="logo"/>
+
             <ui:insert name="top">
+
+
                 <h:form id="menu">
-                    <div class="Nome">Barraco dos esportes</div>
+
                     <p:menubar>
+
                         <p:menuitem value="Comprar"/>
                         <p:menuitem value="Informações"/>
                         <p:menuitem value="Login"/>
@@ -29,19 +34,22 @@
         </div>
 
         <div id="content" class="center_content">
-            <ui:insert name="content">Content</ui:insert>
+            <ui:insert name="content">
+
+                
+
+        <div id="coropoDois">
+            <div id="bottom">
+                <ui:insert name="bottom">
+                    <h:form id="RedesSociais">
+                        <img src="imagens/whatsapp_icon.png" alt="whatssap" class="redesSociais"/>
+                        <img src="imagens/gmail_icon.png" alt="email" class="redesSociais"/>
+                        <img src="imagens/instagram_icon.png" alt="instagram" class="redesSociais"/>
+                    </h:form>
+                </ui:insert>
+            </div>
         </div>
 
-        <div id="bottom">
-            <ui:insert name="bottom">
-                <h:form id="RedesSociais">
-                    <img src="imagens/whatsapp_icon.png" alt="whatssap" class="redesSociais"/>
-                    <img src="imagens/gmail_icon.png" alt="email" class="redesSociais"/>
-                    <img src="imagens/instagram_icon.png" alt="instagram" class="redesSociais"/>
-                </h:form>
-            </ui:insert>
-        </div>
-                         
     </h:body>
 
 </html>

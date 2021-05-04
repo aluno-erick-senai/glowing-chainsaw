@@ -11,8 +11,9 @@
     position: relative;
     border-top: 2px solid antiquewhite;
     background-color: #c2dfef;
-    padding: 5px;
+    padding-top: 5px;
     margin: 10px 0px 0px 0px;
+   
 }
 
 #left {
