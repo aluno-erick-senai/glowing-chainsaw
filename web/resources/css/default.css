@@ -74,12 +74,13 @@ a:link:hover, a:visited:hover  {
 #bottom {
     position: relative;
     background-color: #561f1a;
-    height: 80px;
+    height: 99px;
     width: 100%;
+    padding: 68px;
 }
 #RedesSociais{
     padding-right: 10px;
-    height: 80px;
+    height: 100px;
     width: 250px;
     position: relative;
     float: right;
@@ -134,7 +135,7 @@ a:link:hover, a:visited:hover  {
     height: 65%;
     width: 60%;
     background-color: #c2dfef;
-    margin-left:18%;
+    margin-left:19%;
     border-radius: 40px;
 }
 #quadradofundo{
