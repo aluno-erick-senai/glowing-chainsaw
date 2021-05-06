@@ -184,3 +184,31 @@ a:link:hover, a:visited:hover  {
     border-radius: 40px;
     margin-left: 250px;
 }
+#fundoTituloCA{
+    height: 12%;
+    width: 30%;
+    background-color: #c2dfef;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+#titulocarrinho{
+    position: absolute;
+    font-size:38px;
+    margin-top:15px; 
+    margin-left: 8px;
+    text-align: center;
+    color:black;
+}
+#fundocar{
+    height: 35%;
+    width: 60%;
+    background-color: #c2dfef;
+    margin-left:10%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+#botcompra{
+    float:right;
+    
+}
