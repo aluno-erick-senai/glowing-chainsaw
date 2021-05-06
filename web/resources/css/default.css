@@ -212,3 +212,49 @@ a:link:hover, a:visited:hover  {
     float:right;
     
 }
+.det{
+   width: 250px;
+   background-color: #c2dfef;
+   margin-left: 230px;
+   text-align: center;
+   height: 50px;
+   padding: 10px;
+   border-radius: 40px;
+}
+.detalhes{
+    font-size: 40px;
+    font-family: 'Goblin One', cursive;
+    margin-top: 7px;
+    line-height: 10px;
+    width: -50px;    
+}
+.sobre{
+    font-size: 25px;
+    font-family: 'Goblin One', cursive;
+    margin-top: 10px;
+    line-height: 73px;
+    margin-left: 110px;
+    text-align: center;
+    background-color: #c2dfef;
+    width: 30%;
+    border-radius: 40px;
+}
+.camisa{
+    position: absolute;
+    left: 70%;
+    margin-top: -25%;
+    margin-left: -40px;
+}
+#tamanho{
+    height: 30px;
+    width: 35px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #045491;
+    margin-bottom: 15px;
+    border:0px;
+}
+.info{
+    margin-top: -5px;
+}
