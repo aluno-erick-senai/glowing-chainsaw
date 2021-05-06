@@ -19,6 +19,6 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>base.jsf</welcome-file>
+        <welcome-file>paginaInicial.jsf</welcome-file>
     </welcome-file-list>
 </web-app>

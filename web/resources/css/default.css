@@ -42,7 +42,7 @@ a:link:hover, a:visited:hover  {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;    
-    
+
 }
 
 #logo{
@@ -117,7 +117,7 @@ a:link:hover, a:visited:hover  {
 }
 #usuario{
     height: 200px;  
-    
+
 }
 #login{
     text-align: center;
@@ -156,9 +156,31 @@ a:link:hover, a:visited:hover  {
     margin-left:18%;
     font-size: 25px;
     line-height:50px;
-   
+
 }
 #titulopainel{
     font-size: 30px;
     color:black;
+}
+.fotos{
+    width: 360px;
+    display: inline-block;
+    padding-left: 8px;
+    padding-top: 75px;
+    text-align: center;
+    font-size: 15px;
+    
+}    
+#legendaBemVindo{
+    text-align: center;
+    font-size: 22px;
+    color: cadetblue;
+}
+#corpoPaginaInicial{
+    height: 65%;
+    width: 70%;
+    background-color: #c2dfef;
+    margin-left:19%;
+    border-radius: 40px;
+    margin-left: 250px;
 }
