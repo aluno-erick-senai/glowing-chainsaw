@@ -116,7 +116,7 @@ a:link:hover, a:visited:hover  {
     width: 30%;
 }
 #usuario{
-    height: 200px;  
+    height: 125px;  
 
 }
 #login{
@@ -133,7 +133,7 @@ a:link:hover, a:visited:hover  {
     background-color: yellow;
     border-radius: 10px;
     height:80px;
-    width: 120px;
+    width: 200px;
     margin-top: 10px;
 }
 #corpo{
