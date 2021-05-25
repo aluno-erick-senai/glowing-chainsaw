@@ -3,9 +3,11 @@ package controller.bean;
 
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import model.dao.UsuarioDAO;
 import model.entity.Usuario;
+import utils.Utilidades;
 
 
 /**
@@ -49,18 +51,27 @@ public class UsuarioB {
     public String logar(){
         
         usuario = usuario.logar(email, senha);
-        
+         
        if (usuario == null)
        {
            return "loginAdmin";
        }               
-               
+            
+       
         
     return"detalhesProdutoDois?faces-redirect=true";
     }
                  // o ?faces-redirect=true serve para a tualizar a pagina sem sair.
 
     public UsuarioB() {
+        
+        if (Utilidades.verificarExisteSessao("usuario"))
+        {
+            
+            usuario = (Usuario) Utilidades.verificarSessao("usuario");
+            
+        }
+        
     }
 
     /**
@@ -188,5 +199,6 @@ public class UsuarioB {
     public void setAdministrador(Boolean administrador) {
         this.administrador = administrador;
     }
+    
     
 }
