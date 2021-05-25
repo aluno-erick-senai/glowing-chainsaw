@@ -13,7 +13,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "usuario")
 @NamedQueries({
-    @NamedQuery(name = "usuario.findAll", query = "SELECT u FROM Usuario u")
+    @NamedQuery(name = "usuario.findAll", query = "SELECT u FROM Usuario u"),
+    @NamedQuery(name = "usuario.logar", query = "SELECT u FROM Usuario u WHERE u.email = :email AND u.senha = :senha")
 })
 public class Usuario implements Serializable
 {
@@ -32,6 +33,8 @@ public class Usuario implements Serializable
     private String cep;
     @Column
     private Boolean administrador;
+    @Column
+    private Boolean numero;
     
     public Integer getId()
     {
@@ -56,6 +59,20 @@ public class Usuario implements Serializable
     public String getEmail()
     {
         return email;
+    }
+
+    /**
+     * @return the numero
+     */
+    public Boolean getNumero() {
+        return numero;
+    }
+
+    /**
+     * @param numero the numero to set
+     */
+    public void setNumero(Boolean numero) {
+        this.numero = numero;
     }
 
     public void setEmail(String email)
@@ -101,5 +118,9 @@ public class Usuario implements Serializable
     public void setAdministrador(Boolean administrador)
     {
         this.administrador = administrador;
+    }
+
+    public Usuario logar(String email, String senha) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

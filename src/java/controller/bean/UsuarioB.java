@@ -18,6 +18,7 @@ public class UsuarioB {
  
      @Inject
     private UsuarioDAO usuarioDAO;
+    private Usuario usuario;
      
     private Integer id;
     private String nome;
@@ -25,6 +26,7 @@ public class UsuarioB {
     private String cpf;
     private String senha;
     private String cep;
+    private String numero;
     private Boolean administrador;
      
     public void salvarusuario(){
@@ -38,10 +40,26 @@ public class UsuarioB {
       u.setEmail(email);
       u.setSenha(senha);
       u.setAdministrador(false);
+     
+      usuarioDAO.save(u);
         
-    usuarioDAO.salvar(u);
-        
+      
     }
+    
+    public String logar(){
+        
+        usuario = usuario.logar(email, senha);
+        
+       if (usuario == null)
+       {
+           return "loginAdmin";
+       }               
+               
+        
+    return"detalhesProdutoDois?faces-redirect=true";
+    }
+                 // o ?faces-redirect=true serve para a tualizar a pagina sem sair.
+
     public UsuarioB() {
     }
 
@@ -60,10 +78,38 @@ public class UsuarioB {
     }
 
     /**
+     * @return the usuario
+     */
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    /**
+     * @param usuario the usuario to set
+     */
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    /**
      * @return the nome
      */
     public String getNome() {
         return nome;
+    }
+
+    /**
+     * @return the numero
+     */
+    public String getNumero() {
+        return numero;
+    }
+
+    /**
+     * @param numero the numero to set
+     */
+    public void setNumero(String numero) {
+        this.numero = numero;
     }
 
     /**

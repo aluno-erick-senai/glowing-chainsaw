@@ -9,10 +9,8 @@ import model.entity.Produto;
  * @author Erick Danilo Regis
  */
 @Dependent
-public class ProdutoDAO {
+public class ProdutoDAO extends BaseDao<Produto> {
 
-    public void salvar(Produto p) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
 }

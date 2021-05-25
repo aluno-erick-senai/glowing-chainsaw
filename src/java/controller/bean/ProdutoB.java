@@ -32,7 +32,8 @@ public class ProdutoB {
         p.setDescricao(descricao);
         p.setPreco(Double.NaN);
 
-        produtoDAO.salvar(p);
+        produtoDAO.save(p);
+    
     }
 
     public ProdutoB() {
