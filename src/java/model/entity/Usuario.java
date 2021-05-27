@@ -35,6 +35,8 @@ public class Usuario implements Serializable
     private Boolean administrador;
     @Column
     private Boolean numero;
+    @Column
+    private String telefone;
     
     public Integer getId()
     {
@@ -59,6 +61,20 @@ public class Usuario implements Serializable
     public String getEmail()
     {
         return email;
+    }
+
+    /**
+     * @return the telefone
+     */
+    public String getTelefone() {
+        return telefone;
+    }
+
+    /**
+     * @param telefone the telefone to set
+     */
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     /**

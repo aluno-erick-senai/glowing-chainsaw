@@ -9,13 +9,11 @@
     <ui:define name="content">
         <h:form>
                 Nome: <p:inputText value="#{usuarioB.nome}"  />
-                Telefone: <p:inputMask value="#{usuarioB}" mask="(99)99999-9999"/> <!-- falta esse -->
+                Telefone: <p:inputMask value="#{usuarioB.telefone}" mask="(99)99999-9999"/> 
                 CPF: <p:inputMask value="#{usuarioB.cpf}" mask="999.999.999-99"/>
                 Cidade: <p:inputText/>
                 CEP: <p:inputMask mask="99999-99" value="#{usuarioB.cep}"/>
                 Número: <p:inputText value="#{usuarioB.numero}"/>
-                Logradouro: <p:inputText value="#{usuarioB}" /> <!-- falta esse -->
-                Complemento: <p:inputText value="#{usuarioB}" /> <!-- falta esse -->
                 <p:commandButton value="Salvar"/>
                 <p:column headerText="Nome"/>
                 <h:outputText/>

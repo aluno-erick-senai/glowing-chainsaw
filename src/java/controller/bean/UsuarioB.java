@@ -28,7 +28,8 @@ public class UsuarioB {
     private String cpf;
     private String senha;
     private String cep;
-    private String numero;
+    private String telefone;
+    private Boolean numero;
     private Boolean administrador;
      
     public void salvarusuario(){
@@ -41,6 +42,7 @@ public class UsuarioB {
       u.setCpf(cpf);
       u.setEmail(email);
       u.setSenha(senha);
+      u.setTelefone(telefone);
       u.setAdministrador(false);
      
       usuarioDAO.save(u);
@@ -89,6 +91,20 @@ public class UsuarioB {
     }
 
     /**
+     * @return the telefone
+     */
+    public String getTelefone() {
+        return telefone;
+    }
+
+    /**
+     * @param telefone the telefone to set
+     */
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    /**
      * @return the usuario
      */
     public Usuario getUsuario() {
@@ -112,14 +128,14 @@ public class UsuarioB {
     /**
      * @return the numero
      */
-    public String getNumero() {
+    public Boolean getNumero() {
         return numero;
     }
 
     /**
      * @param numero the numero to set
      */
-    public void setNumero(String numero) {
+    public void setNumero(Boolean numero) {
         this.numero = numero;
     }
 

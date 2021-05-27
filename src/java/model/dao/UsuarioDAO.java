@@ -22,9 +22,9 @@ public class UsuarioDAO extends BaseDao<Usuario> {
         }
     }
 
-    public Usuario logar(String email_F, Integer senha_F) {
+    public Usuario logar(String email, Integer senha) {
         try {
-            return (Usuario) getEntityManager().createNamedQuery("Usuario.logar").setParameter("email", email_F).setParameter("senha", senha_F).getSingleResult();
+            return (Usuario) getEntityManager().createNamedQuery("Usuario.logar").setParameter("email", email).setParameter("senha", senha).getSingleResult();
         } catch (Exception e) {
             System.out.println("erro: " + e.getLocalizedMessage());
             return null;
