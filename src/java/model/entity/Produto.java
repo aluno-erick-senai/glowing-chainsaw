@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "produto")
 @NamedQueries({
-    @NamedQuery(name = "produto.findAll", query = "SELECT p FROM Produto p")
+    @NamedQuery(name = "findAll", query = "SELECT p FROM Produto p")
 })
 public class Produto implements Serializable
 {

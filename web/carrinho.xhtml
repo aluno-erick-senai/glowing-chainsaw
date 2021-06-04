@@ -7,16 +7,21 @@
 
     <ui:define name="content">
        
-        <h:form id="botcompar">
-            <p:commandButton value="Compar" id="bot"/> 
-        </h:form>
+        
         
         
         <div id="fundoTituloCA">
             <h1 id="titulocarrinho">Carrinho de Compras</h1> 
         </div>
         <div id="fundocar">
-            
+            <h:form >
+                <p:dataTable var="produto" value="#{produtoB.allprodutos}">
+                    <p:column>
+                        <h:outputText value="#{produto.nome}"/>
+                    </p:column>
+                </p:dataTable>
+            <p:commandButton value="Compar" id="bot"/> 
+            </h:form>
         </div>
         
     </ui:define>

@@ -1,6 +1,8 @@
 
 package controller.bean;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
@@ -22,7 +24,28 @@ public class ProdutoB {
     private String nome;
     private String descricao;
     private String foto;
-
+    
+    public ProdutoB(){
+        carro=new ArrayList<>();
+        
+        if (utils.Utilidades.verificaExisteRegistroSessao("carro"))
+        {
+            carro=(List<Produto>) utils.Utilidades.recuperaRegistroSessao("carro");
+        }
+    }
+    private List<Produto>carro;
+    
+    
+    public List<Produto> getAllprodutos(){
+        return produtoDAO.getAllResults();
+    }
+        
+    
+    
+     public List<Produto> getCarrinho() {
+        return carro;
+    }
+    
     public void salvarProduto() {
        
         Produto p = new Produto();
@@ -35,11 +58,7 @@ public class ProdutoB {
         produtoDAO.save(p);
     
     }
-
-    public ProdutoB() {
-
-    }
-
+    
     /**
      * @return the id
      */

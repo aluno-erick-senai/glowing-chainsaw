@@ -1,4 +1,4 @@
-package controller.filter;
+/**package controller.filter;
 
 
 import java.io.IOException;
@@ -16,7 +16,7 @@ import model.entity.Usuario;
 /**
  *
  * @author João 
- */
+
 @WebFilter("/*")
 public class barracoFilter implements Filter{
 
@@ -30,7 +30,7 @@ public class barracoFilter implements Filter{
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         HttpSession httpSession = httpRequest.getSession();
         
-        if(httpRequest.getRequestURI().contains("ProdutoPedido"){
+        if(httpRequest.getRequestURI().contains("ProdutoPedido")){
         
             Usuario usuario = (Usuario) httpSession.getAttribute("usuario");
             
@@ -45,3 +45,4 @@ public class barracoFilter implements Filter{
     }
     
 }
+*/

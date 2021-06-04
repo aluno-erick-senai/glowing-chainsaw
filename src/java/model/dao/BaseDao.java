@@ -35,8 +35,8 @@ public class BaseDao <T>
         return object;
     }
     
-     public List<T> getAllResults (String query)
+     public List<T> getAllResults ()
     {
-        return getEntityManager().createNamedQuery(query).getResultList();
+        return getEntityManager().createNamedQuery("findAll").getResultList();
     }
 }

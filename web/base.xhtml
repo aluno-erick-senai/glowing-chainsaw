@@ -25,11 +25,13 @@
 
                 <h:form id="menu">
 
-                    <p:menubar>
+                    <p:menubar id="menu">
 
-                        <p:menuitem value="Comprar"/>
-                        <p:menuitem value="Informações"/>
-                        <p:menuitem value="Login"/>
+                        <p:menuitem value="Comprar" action="#{barracoMb.getPaginaComprar()}"/>
+                        <p:menuitem value="Informações" action="#{barracoMb.getPaginaInfo()}"/>
+                        <p:menuitem value="Login" action="#{barracoMb.getPaginaLogin()}"/>
+                        <p:menuitem value="Cadastro" action="#{barracoMb.getPaginaCadastro()}"/>
+                        <p:menuitem value="Menu Principal" action="#{barracoMb.getPaginaBase()}"/>
                     </p:menubar>
                 </h:form>
             </ui:insert>
